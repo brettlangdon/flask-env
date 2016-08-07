@@ -1,1 +1,1 @@
-include LICENSE README.rst flask_env.py test_flask_env.py
+include CHANGELOG LICENSE README.rst flask_env.py test_flask_env.py
