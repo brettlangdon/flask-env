@@ -1,6 +1,11 @@
 flask-env
 =========
 
+.. image:: https://badge.fury.io/py/flask-env.svg
+    :target: https://badge.fury.io/py/flask-env
+.. image:: https://travis-ci.org/brettlangdon/flask-env.svg?branch=master
+    :target: https://travis-ci.org/brettlangdon/flask-env
+
 Easily set `Flask <http://flask.pocoo.org/>`_ settings from environment variables.
 
 The reason for using :code:`flask-env` is to be able to follow the `12-factor app <http://12factor.net/>`_ suggestions for configuring your application.
