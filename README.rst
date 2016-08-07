@@ -1,7 +1,7 @@
 flask-env
 =========
 
-Easily set Flask settings from environment variables.
+Easily set `Flask <http://flask.pocoo.org/>`_ settings from environment variables.
 
 The reason for using :code:`flask-env` is to be able to follow the `12-factor app <http://12factor.net/>`_ suggestions for configuring your application.
 
@@ -21,7 +21,8 @@ Usage
 
 With :code:`flask-env` you will define your configuration as an object and load it into your Flask application via `app.config.from_object <http://flask.pocoo.org/docs/0.11/api/#flask.Config.from_object>`_ method.
 
-To use in Python 2:
+Python 2
+--------
 
 .. code:: python
 
@@ -40,7 +41,8 @@ To use in Python 2:
    app.config.from_object(Configuration)
 
 
-To use in Python 3:
+Python 3
+--------
 
 .. code:: python
 
@@ -57,8 +59,20 @@ To use in Python 3:
    app.config.from_object(Configuration)
 
 
-Configuration
-~~~~~~~~~~~~~
+Overriding environment variables
+--------------------------------
+
+.. code:: bash
+
+    # Export environment variable for shell session
+    export DEBUG=true
+
+    # Set explicitly for a specific command execution
+    PORT=8000 python app.py
+
+
+Configuring flask-env
+~~~~~~~~~~~~~~~~~~~~~
 
 :code:`flask-env` offers two configuration options to determine how/which environment variables are loaded.
 
@@ -73,7 +87,10 @@ AS_JSON
   (default: :code:`True`, example: :code:`AS_JSON = False`)
 
 
-Setting configuration values:
+Setting configuration values
+----------------------------
+
+You can set the :code:`flask-env` configuration settings directly on your Flask configuration object.
 
 .. code:: python
 
