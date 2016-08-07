@@ -2,7 +2,7 @@
 Flask-Env
 ==============
 """
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 def get_long_description():
@@ -20,8 +20,8 @@ setup(
     author_email='me@brett.is',
     description='Easily set Flask settings from environment variables',
     long_description=get_long_description(),
-    packages=find_packages(),
-    zip_safe=True,
+    py_modules=['flask_env'],
+    zip_safe=False,
     include_package_data=True,
     platforms='any',
     install_requires=[],
