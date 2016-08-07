@@ -81,11 +81,6 @@ ENV_PREFIX
   The prefix will be removed from the environment variable name when setting in the configuration.
   (default: :code:`''`, example: :code:`ENV_PREFIX = 'MYAPP_'`)
 
-AS_JSON
-  Whether or not to try and parse each configuration value as JSON.
-  This will ensure that when setting variables as integers/null/booleans that they properly get parsed in their applicable Python types.
-  (default: :code:`True`, example: :code:`AS_JSON = False`)
-
 
 Setting configuration values
 ----------------------------
@@ -99,4 +94,3 @@ You can set the :code:`flask-env` configuration settings directly on your Flask 
 
    class Configuration(metaclass=MetaFlaskEnv):
        ENV_PREFIX = 'MYAPP_'
-       AS_JSON = False
