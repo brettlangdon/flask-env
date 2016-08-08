@@ -1,4 +1,4 @@
-flask-env
+Flask-Env
 =========
 
 .. image:: https://badge.fury.io/py/flask-env.svg
@@ -18,7 +18,7 @@ Installation
 
 .. code:: bash
 
-   pip install flask_env
+   pip install Flask-Env
 
 
 Usage
