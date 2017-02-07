@@ -1,8 +1,8 @@
 Flask-Env
 =========
 
-.. image:: https://badge.fury.io/py/flask-env.svg
-    :target: https://badge.fury.io/py/flask-env
+.. image:: https://badge.fury.io/py/Flask-Env.svg
+    :target: https://badge.fury.io/py/Flask-Env
 .. image:: https://travis-ci.org/brettlangdon/flask-env.svg?branch=master
     :target: https://travis-ci.org/brettlangdon/flask-env
 
