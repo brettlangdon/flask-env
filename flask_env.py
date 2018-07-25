@@ -13,7 +13,7 @@ class MetaFlaskEnv(type):
 
         # Get our internal settings
         prefix = dict.get('ENV_PREFIX', '')
-        load_all = dict.get('ENV_LOAD_ALL', False)
+        load_all = dict.get('ENV_LOAD_ALL', True)
 
         # Override default configuration from environment variables
         for key, value in os.environ.items():
