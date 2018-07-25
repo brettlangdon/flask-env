@@ -13,6 +13,7 @@ class MetaFlaskEnv(type):
 
         # Get our internal settings
         prefix = dict.get('ENV_PREFIX', '')
+        load_all = dict.get('ENV_LOAD_ALL', True)
 
         # Override default configuration from environment variables
         for key, value in os.environ.items():
@@ -22,6 +23,11 @@ class MetaFlaskEnv(type):
 
             # Strip the prefix from the environment variable name
             key = key[len(prefix):]
+
+            # Unless we specify that we want to load all environment variables
+            #   only load variables that we have predefined on our object
+            if not load_all and not hasattr(cls, key):
+                continue
 
             # If value is "true" or "false", parse as a boolean
             # Otherwise, if it contains a "." then try to parse as a float

@@ -86,6 +86,14 @@ ENV_PREFIX
   The prefix will be removed from the environment variable name when setting in the configuration.
   (default: :code:`''`, example: :code:`ENV_PREFIX = 'MYAPP_'`)
 
+ENV_LOAD_ALL
+  Whether or not to load all environment variables for the configuration object.
+  When :code:`False` only settings predefined on the configuration object are loaded, all others are ignored.
+  When :code:`True` all environment variables defined in :code:`os.environ` will get loaded into your configuration object.
+  (default :code:`True`)
+
+  Note: Future versions will have default of :code:`False`.
+
 
 Setting configuration values
 ----------------------------
@@ -99,3 +107,4 @@ You can set the :code:`flask-env` configuration settings directly on your Flask 
 
    class Configuration(metaclass=MetaFlaskEnv):
        ENV_PREFIX = 'MYAPP_'
+       ENV_LOAD_ALL = False
