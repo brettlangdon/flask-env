@@ -1,6 +1,17 @@
 Flask-Env Changelog
 ===================
 
+Version 1.1.0
+-------------
+
+:Released: 07-25-2018
+
+:Changes:
+  Add :code:`ENV_LOAD_ALL` setting to control whether all environment variables are loaded by default or not
+
+  **Note:** Default is :code:`True`, future version will default to :code:`False`
+
+
 Version 1.0.1
 -------------
 
