@@ -1,6 +1,15 @@
 Flask-Env Changelog
 ===================
 
+Version 2.0.0
+-------------
+
+:Released: 07-25-2018
+
+:Changes:
+  Change :code:`ENV_LOAD_ALL` to be :code:`False` by default
+
+
 Version 1.1.0
 -------------
 

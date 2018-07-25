@@ -13,7 +13,7 @@ def get_long_description():
 
 setup(
     name='Flask-Env',
-    version='1.1.0',
+    version='2.0.0',
     url='https://github.com/brettlangdon/flask-env',
     license='MIT',
     author='Brett Langdon',
@@ -26,7 +26,7 @@ setup(
     platforms='any',
     install_requires=[],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Flask',
         'Intended Audience :: Developers',
