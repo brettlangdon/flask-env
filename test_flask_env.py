@@ -13,6 +13,18 @@ class TestFlaskEnv(unittest.TestCase):
             **kwargs
         ))
 
+    def test_default_env_load_all(self):
+        """A test to ensure that we load all environment variables by default"""
+        # Configure an environment variable not defined on the configuration class
+        os.environ['TEST_SETTING'] = 'true'
+
+        # Create our configuration object
+        TestConfiguration = MetaFlaskEnv('TestConfiguration', (object, ), dict())
+
+        # Assert that we loaded all environment variables
+        self.assertTrue(TestConfiguration.TEST_SETTING)
+
+
     def test_default_settings(self):
         """A test to ensure that if no environment variable is set, we get the default value that is set"""
         TestConfiguration = self._get_test_configuration(DEFAULT_SETTING='default_value')
